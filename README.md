@@ -23,3 +23,8 @@ I am currently working on actions (block user, unblock user, invite user to grou
 
 
 If you want to get help, or want any other programming job done, feel free to contact me at my steam profile: https://steamcommunity.com/id/jegerkatten
+
+
+Changelog i made to bot!
+1) added game "570" to be played 
+2) Added welcome message when someone adds bot.
