@@ -67,12 +67,14 @@ client.on('steamGuard', (domain, callback) => {
 
 client.on('loggedOn', () => {
 	client.setPersona(1);
+	client.gamesPlayed(570);
 	console.log("Logged in. (took " + (Date.now() - initialTime) + "ms).");
 });
 
 client.on('friendRelationship', (friend, relationship) => {
 	if(relationship == SteamUser.EFriendRelationship.RequestRecipient && config.autoaccept && config.autoaccept == "true")
 		return client.addFriend(friend);
+	        return client.chatMessage(friend, 'Hello there! Thanks for adding me, use command "HELP" to get started!')
 })
 
 const addResponse = (message, response, callback) => {
